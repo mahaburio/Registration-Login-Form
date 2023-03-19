@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/206993456b.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="reg-form" id="regForm">
+          <div class="input-sec">
+            <form id="formSec">
+              <input type="text" placeholder="Enter Your Name" />
+              <input type="email" placeholder="Enter Email Address" required />
+
+              <div class="password-sec">
+                <span id="passOn">
+                  <input
+                    class="passOne"
+                    type="password"
+                    placeholder="Enter New Passoword"
+                    onkeypress="showFuncOn()"
+                    required
+                  />
+                  <button class="showBtn1">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                  <button class="hidebtn1">
+                    <i class="fa-solid fa-eye-slash"></i>
+                  </button>
+                </span>
+                <span id="passTw"
+                  ><input
+                    class="passTwo"
+                    type="password"
+                    placeholder="Confirm Passoword"
+                    onkeypress="showFuncTw()"
+                    required
+                  /><button class="showBtn2">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                  <button class="hidebtn2">
+                    <i class="fa-solid fa-eye-slash"></i>
+                  </button>
+                </span>
+              </div>
+              <button class="regBtn">Registration</button>
+            </form>
+            <div class="log-time" id="logTime">
+              <input
+                type="email"
+                placeholder="someone@example.com"
+                id="logEmail"
+                required
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                id="logPass"
+                required
+              />
+            </div>
+            
+            <button class="logHere">Login Here</button>
+            <button class="logBtn text-center">Login</button>
+
+            <p class="logLink">
+              Are You Registerd? <a id="loginBtn" href="#">Log in</a>
+            </p>
+            <p class="regLink">
+              Are You Not Registerd?
+              <a id="regHereBtn" href="index.html">Registration Here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
